@@ -1,0 +1,15 @@
+{
+  "name": "fishc-Chrome-extension",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "A chrome extension for blocking the mumu in fishc.com",
+  "browser_action": {
+    "default_icon": "favicons.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://blog.fishc.com/*"],
+      "js": ["myscript.js"]
+    }
+  ]
+}
